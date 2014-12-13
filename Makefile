@@ -1,3 +1,6 @@
+# this is makefile for dateconverter
+# copyright (c) 2014, Nabin Bhattarai
+
 CC = gcc
 CFLAGS = -Wall -g
 EXECUTABLE = ndc
