@@ -14,7 +14,6 @@ int main (int argc, char **argv)
 	int option_index = 0;
 	int to = 0;
 	char *input_date = calloc ( 32 , sizeof (char));
-	char *print_date = calloc ( 32 , sizeof (char));
 	char *input_calendar_date = calloc (32 , sizeof (char));
 	
 	strcpy (input_date , "empty");
@@ -81,7 +80,7 @@ int main (int argc, char **argv)
 						bs_calendar_flag = 1;
 					else if (strcmp (optarg , "english") == 0 || strcmp (optarg , "ad") == 0)
 						ad_calendar_flag = 1;
-					else- if (1) {
+					else if (1) {
 						
 					}
 				}

@@ -631,14 +631,14 @@ if(is_bs_date){
     else
         return 0;
 }else{
-    if( (dt.year <= ad_extreme_date.year && dt.month <= 12) && \
+    if((dt.year <= ad_extreme_date.year && dt.month <= 12) && \
 		(dt.year >= ad_base_date.year && dt.month >= 1)  && \
 		(dt.day >= 1 && dt.day <= days_in_month_AD(dt.year , dt.month)))
 		return 1;
     else
         return 0;
 }
-	return 0;
+return 1;
 }
 
 void print_date (Date dt , char *format)
