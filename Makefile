@@ -23,7 +23,7 @@ dateconverter.o: dateconverter.c $(HEADERFILES)
 dc.o: dc.c $(HEADERFILES)
 	@$(CC) -c dc.c
 install:
-	@sudo cp ndc /usr/bin/
+	@cp ndc /usr/bin/
 	@echo Package Installed
 clean:
 	@rm -f *.o
