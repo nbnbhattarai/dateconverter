@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <curses.h>
 #include <getopt.h>
 #include "dateconverter.h"
 #include "util.h"
