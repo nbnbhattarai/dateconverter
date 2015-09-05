@@ -4,8 +4,6 @@
 	#include <stdio.h>
 	#include "dateconverter.h"
 
-	#define VERSION "1.0.0"
-	
 	// It gives the value of ten to the power of p
 	int tentopow ( int );
 	
