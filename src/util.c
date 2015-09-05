@@ -178,14 +178,14 @@ int date_converter (int index)
 
 void print_usage ()
 {
-	printf(	"Usage: ndc -c (or --convert ) date_input -t (or --to) system_of_date\n");
+	extern char *__progname;
+	printf(	"Usage:\t%s -c <date_input> -t <system_of_date>\n\t%s -m\n\t%s -T | -n\n\t%s -h\n", __progname, __progname, __progname, __progname);
 }
 
 void print_version ()
 {
-	printf ("ndc (nepali date converter) : version ");
-	printf (VERSION);
-	printf (" copyright (c) 2014 , Nabin Bhattarai\n");
+	extern char *__progname;
+	printf ("%s (nepali date converter) : version %s copyright (c) 2014 , Nabin Bhattarai\n", __progname, VERSION);
 }
 
 void calprint (Date dt , int isbs)
