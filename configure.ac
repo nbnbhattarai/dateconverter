@@ -2,7 +2,7 @@
 # Process this file with autoconf to produce a configure script.
 
 AC_PREREQ([2.69])
-AC_INIT([dateconverter], [1.0.0], [you@address.com])
+AC_INIT([dateconverter], [1.0.0], [nbn.bhattarai99@hotmail.com])
 AM_INIT_AUTOMAKE
 AC_CONFIG_SRCDIR([src/dateconverter.c])
 AC_CONFIG_HEADERS([config.h])
