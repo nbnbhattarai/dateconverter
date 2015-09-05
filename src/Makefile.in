@@ -86,7 +86,7 @@ POST_INSTALL = :
 NORMAL_UNINSTALL = :
 PRE_UNINSTALL = :
 POST_UNINSTALL = :
-bin_PROGRAMS = dateconverter$(EXEEXT)
+bin_PROGRAMS = ndc$(EXEEXT)
 subdir = src
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
 am__aclocal_m4_deps = $(top_srcdir)/configure.ac
@@ -99,10 +99,9 @@ CONFIG_CLEAN_FILES =
 CONFIG_CLEAN_VPATH_FILES =
 am__installdirs = "$(DESTDIR)$(bindir)"
 PROGRAMS = $(bin_PROGRAMS)
-am_dateconverter_OBJECTS = dateconverter.$(OBJEXT) dc.$(OBJEXT) \
-	util.$(OBJEXT)
-dateconverter_OBJECTS = $(am_dateconverter_OBJECTS)
-dateconverter_LDADD = $(LDADD)
+am_ndc_OBJECTS = dateconverter.$(OBJEXT) dc.$(OBJEXT) util.$(OBJEXT)
+ndc_OBJECTS = $(am_ndc_OBJECTS)
+ndc_LDADD = $(LDADD)
 AM_V_P = $(am__v_P_@AM_V@)
 am__v_P_ = $(am__v_P_@AM_DEFAULT_V@)
 am__v_P_0 = false
@@ -131,8 +130,8 @@ AM_V_CCLD = $(am__v_CCLD_@AM_V@)
 am__v_CCLD_ = $(am__v_CCLD_@AM_DEFAULT_V@)
 am__v_CCLD_0 = @echo "  CCLD    " $@;
 am__v_CCLD_1 = 
-SOURCES = $(dateconverter_SOURCES)
-DIST_SOURCES = $(dateconverter_SOURCES)
+SOURCES = $(ndc_SOURCES)
+DIST_SOURCES = $(ndc_SOURCES)
 am__can_run_installinfo = \
   case $$AM_UPDATE_INFO_DIR in \
     n|no|NO) false;; \
@@ -248,7 +247,7 @@ top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 AM_CFLAGS = -Wall -g -DVERSION=\"$(VERSION)\"
 AM_LDFLAGS = 
-dateconverter_SOURCES = dateconverter.c dc.c util.c dateconverter.h util.h
+ndc_SOURCES = dateconverter.c dc.c util.c dateconverter.h util.h
 all: all-am
 
 .SUFFIXES:
@@ -325,9 +324,9 @@ uninstall-binPROGRAMS:
 clean-binPROGRAMS:
 	-test -z "$(bin_PROGRAMS)" || rm -f $(bin_PROGRAMS)
 
-dateconverter$(EXEEXT): $(dateconverter_OBJECTS) $(dateconverter_DEPENDENCIES) $(EXTRA_dateconverter_DEPENDENCIES) 
-	@rm -f dateconverter$(EXEEXT)
-	$(AM_V_CCLD)$(LINK) $(dateconverter_OBJECTS) $(dateconverter_LDADD) $(LIBS)
+ndc$(EXEEXT): $(ndc_OBJECTS) $(ndc_DEPENDENCIES) $(EXTRA_ndc_DEPENDENCIES) 
+	@rm -f ndc$(EXEEXT)
+	$(AM_V_CCLD)$(LINK) $(ndc_OBJECTS) $(ndc_LDADD) $(LIBS)
 
 mostlyclean-compile:
 	-rm -f *.$(OBJEXT)
