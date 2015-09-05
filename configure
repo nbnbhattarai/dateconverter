@@ -4148,20 +4148,7 @@ fi
 
 done
 
-for ac_header in curses.h
-do :
-  ac_fn_c_check_header_mongrel "$LINENO" "curses.h" "ac_cv_header_curses_h" "$ac_includes_default"
-if test "x$ac_cv_header_curses_h" = xyes; then :
-  cat >>confdefs.h <<_ACEOF
-#define HAVE_CURSES_H 1
-_ACEOF
-
-else
-  as_fn_error $? "\"Could not find curses development files. Please install ncurses-devel\"" "$LINENO" 5
-fi
-
-done
-
+#AC_CHECK_HEADERS([curses.h],[],[AC_MSG_ERROR("Could not find curses development files. Please install ncurses-devel")])
 
 # Checks for typedefs, structures, and compiler characteristics.
 { $as_echo "$as_me:${as_lineno-$LINENO}: checking for stdbool.h that conforms to C99" >&5

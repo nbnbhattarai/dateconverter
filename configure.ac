@@ -14,7 +14,7 @@ AC_PROG_CC
 
 # Checks for header files.
 AC_CHECK_HEADERS([stdlib.h string.h getopt.h])
-AC_CHECK_HEADERS([curses.h],[],[AC_MSG_ERROR("Could not find curses development files. Please install ncurses-devel")])
+#AC_CHECK_HEADERS([curses.h],[],[AC_MSG_ERROR("Could not find curses development files. Please install ncurses-devel")])
 
 # Checks for typedefs, structures, and compiler characteristics.
 AC_CHECK_HEADER_STDBOOL
