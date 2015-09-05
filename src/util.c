@@ -179,7 +179,10 @@ int date_converter (int index)
 void print_usage ()
 {
 	extern char *__progname;
-	printf(	"Usage:\t%s -c <date_input> -t <system_of_date>\n\t%s -m\n\t%s -T | -n\n\t%s -h\n", __progname, __progname, __progname, __progname);
+	printf(	"Usage:\t%s -c <yyyy-mm-dd> -t <nepali | bs | english | ad>\n\
+\t%s -m\n\
+\t%s -T | -n\n\
+\t%s -h\n", __progname, __progname, __progname, __progname);
 }
 
 void print_version ()
